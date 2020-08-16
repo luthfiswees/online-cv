@@ -9,7 +9,8 @@
     "build": "npx webpack",
     "copy-assets": "cp -R assets dist/assets",
     "start-server": "node app.js",
-    "build-dev": "npm run clean && npm run build && npm run copy-assets && npm run start-server"
+    "build-dev": "npm run clean && npm run build && npm run copy-assets && npm run start-server",
+    "build-prod": "npm run clean && npm run build && npm run copy-assets"
   },
   "keywords": [
     "Online",
