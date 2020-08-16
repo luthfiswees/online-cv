@@ -1,0 +1,49 @@
+{
+  "contents": [
+    {
+      "titleName": "Senior Software Engineer in Test",
+      "companyName": "Moka (Gojek Group)",
+      "yearOfService": "June 2020 - Present",
+      "description": {
+        "about": "Moka is a mobile technology company providing cloud-based Point-of-Sale and payment solutions. Recently acquired by Gojek, one of Indonesian Unicorn companies and become one of it's subsidiaries.",
+        "general": "Worked for Android POS team. The team consist of 5 Software Engineer in Test with 1 Software Engineer in Test Lead. The team is operated using Scrum.",
+        "points": [
+          "Perform end-to-end test on Android apps using Appium. Mostly written in Java.",
+          "Mantaining and improving in-house end-to-end test libraries. Mainly built around Spring framework.",
+          "Mantaining end-to-end test pipeline on Jenkins."
+        ]
+      }
+    },
+    {
+      "titleName": "Test Engineer",
+      "companyName": "Bukalapak",
+      "yearOfService": "September 2017 - May 2020",
+      "description": {
+        "about": "Bukalapak are one of the largest E-Commerce in Indonesia and one of Indonesian five unicorn companies. Founded in 2010, Bukalapak serve as platform that sells products and a lot of other commodities such as paying bills, paying taxes, even gold trading.",
+        "general": "Worked with multiple teams that revolves around marketplace core features such as Homepage, Product Search, Product Details, and Shopping Cart. Each of the team is a Scrum team with various size from around 4-5 developers to nearly 15.",
+        "points": [
+          "Perform end-to-end test and API test automation on web apps using Selenium and Cucumber. Mostly written in Ruby.",
+          "Perform end-to-end test automation on mobile apps (Android and iOS) using Appium. Mostly written in Java.",
+          "Mantaining end-to-end test pipeline on Jenkins.",
+          "Mantaining API test pipeline on Gitlab CI.",
+          "Perform load and performance test using Locust"
+        ]
+      }
+    },
+    {
+      "titleName": "Teaching Assistant",
+      "companyName": "University of Indonesia",
+      "yearOfService": "February 2017 - June 2017",
+      "description": {
+        "about": "University of Indonesia (UI) is one of the best state university in Indonesia. In the 2019 QS World Universities Ranking, UI ranked 1st in Indonesia, 57th in Asia, and 292nd in the world.",
+        "general": "Worked as a Teaching Assistant in Software Development Course. Software Development are course that provide basic knowledge of software projects and it's practices. The course use tools like Git, Pivotal Tracker, and various CI/CD platform depends on the project. The projects are real projects given by UI from external vendor partners/companies. Lecturers act as facilitator and teaching assistants worked as a facilitator and Scrum Master. I managed 3 groups of students, where there is around 5-6 student on each group.",
+        "points": [
+          "Lead daily standups and track student's progress",
+          "Communicating student's or vendor's problems to lecturers and come up with solutions",
+          "Grading tasks",
+          "Communicating with external vendor partners"
+        ]
+      }
+    }
+  ]
+}

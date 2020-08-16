@@ -1,0 +1,16 @@
+{
+    "contents": [
+        {
+            "name": "University of Indonesia",
+            "degree": "Bachelor's degree",
+            "major": "Computer Sceince",
+            "year": "2013-2017"
+        },
+        {
+            "name": "SMAN 21 Jakarta",
+            "degree": "High School",
+            "major": "STEM (Science Class)",
+            "year": "2010-2013"
+        }
+    ]
+}

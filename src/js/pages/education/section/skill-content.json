@@ -1,0 +1,82 @@
+{
+    "contents": [
+        {
+            "name": "Java",
+            "type": "programming",
+            "description": "Programming Language",
+            "iconLink": "assets/icons/icons8-java-96.png"
+        },
+        {
+            "name": "Ruby",
+            "type": "programming",
+            "description": "Programming Language",
+            "iconLink": "assets/icons/icons8-ruby-programming-language-96.png"
+        },
+        {
+            "name": "NodeJS",
+            "type": "programming",
+            "description": "Programming Language",
+            "iconLink": "assets/icons/icons8-nodejs-96.png"
+        },
+        {
+            "name": "Python",
+            "type": "programming",
+            "description": "Programming Language",
+            "iconLink": "assets/icons/icons8-python-96.png"
+        },
+        {
+            "name": "Go",
+            "type": "programming",
+            "description": "Programming Language",
+            "iconLink": "assets/icons/icons8-golang-96.png"
+        },
+        {
+            "name": "Selenium",
+            "type": "technologies",
+            "description": "Testing Library",
+            "iconLink": "assets/icons/icons8-selenium-96.png"
+        },
+        {
+            "name": "Cucumber",
+            "type": "technologies",
+            "description": "Testing Library",
+            "iconLink": "assets/icons/icons8-cucumber-96.png"
+        },
+        {
+            "name": "Jenkins",
+            "type": "technologies",
+            "description": "CI/CD Platform",
+            "iconLink": "assets/icons/icons8-jenkins-96.png"
+        },
+        {
+            "name": "Gitlab CI",
+            "type": "technologies",
+            "description": "CI/CD Platform",
+            "iconLink": "assets/icons/icons8-gitlab-96.png"
+        },
+        {
+            "name": "Docker",
+            "type": "technologies",
+            "description": "Container Technology",
+            "iconLink": "assets/icons/icons8-docker-96.png"
+        },
+        {
+            "name": "MySQL",
+            "type": "other",
+            "description": "Database Technology",
+            "iconLink": "assets/icons/icons8-mysql-96.png"
+        },
+        {
+            "name": "MongoDB",
+            "type": "other",
+            "description": "Database Technology",
+            "iconLink": "assets/icons/icons8-mongodb-96.png"
+        },
+        {
+            "name": "Redis",
+            "type": "other",
+            "description": "Database Technology",
+            "iconLink": "assets/icons/icons8-redis-96.png"
+        }
+    ]
+}
