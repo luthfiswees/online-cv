@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Header, Image, Segment, Grid } from "semantic-ui-react";
+import { Card, Container, Header, Image, Segment, Grid } from "semantic-ui-react";
 
 class HomePageProfileSection extends Component {
   render() {
@@ -8,7 +8,7 @@ class HomePageProfileSection extends Component {
         <Container text>
           <br/><br/>
           <Segment>
-            <Grid columns={2} relaxed="very">
+            <Grid columns={4} relaxed="very">
               <Grid.Column width={1}/>
 
               <Grid.Column width={5}>
@@ -16,8 +16,15 @@ class HomePageProfileSection extends Component {
                 <Image 
                   floated="center"
                   src="assets/profile/myphoto.jpg"
-                  style={{ borderRadius: "50%" }}
+                  style={{ borderRadius: "50%", padding: "10%" }}
                 />
+
+                <Header as="h5">Contact</Header>
+                <b>Email</b>
+                <p><b><i>luthfiswees@gmail.com</i></b></p>
+
+                <Header as="h5">Location</Header>
+                <p><b><i>Greater Jakarta Area, Indonesia</i></b></p>
               </Grid.Column>
 
               <Grid.Column width={9}>
@@ -35,14 +42,28 @@ class HomePageProfileSection extends Component {
                   If you had an opportunity related to this, please feel free to contact me.
                 </p>
 
-                <Header as="h5">Contacts</Header>
+              </Grid.Column>
+
+              <Grid.Column width={1}/>
+            </Grid>
+
+            <Grid columns={4} relaxed="very">
+              <Grid.Column width={1}/>
+
+              <Grid.Column width={5}>
+                <Header as="h5">Language</Header>
+                <b>Indonesian</b>
+                <p><b><i>(Native)</i></b></p>
+                <b>English</b>
+                <p><b><i>(Proficient)</i></b></p>
+              </Grid.Column>
+
+              <Grid.Column width={9}>
+                <Header as="h5">Public Page</Header>
                 <b>LinkedIn</b>
                 <p><a href="https://www.linkedin.com/in/luthfiswees/">https://www.linkedin.com/in/luthfiswees/</a></p>
                 <b>Github</b>
                 <p><a href="https://github.com/luthfiswees/">https://github.com/luthfiswees/</a></p>
-                <b>Email</b>
-                <p><b><i>luthfiswees@gmail.com</i></b></p>
-
               </Grid.Column>
 
               <Grid.Column width={1}/>
