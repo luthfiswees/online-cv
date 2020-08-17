@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Menu } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Header extends Component {
   constructor(props) {
@@ -29,7 +30,8 @@ class Header extends Component {
               active={activeItem === 'home'}
               onClick={this.handleItemClick}
               as={Link}
-              to='/'
+              smooth
+              to='/#home-page-profile-section'
             />
 
             <Menu.Item
@@ -37,7 +39,8 @@ class Header extends Component {
               active={activeItem === 'experience'}
               onClick={this.handleItemClick}
               as={Link}
-              to='/experience'
+              smooth
+              to='/#experience-page-title-section'
             />
 
             <Menu.Item
@@ -45,7 +48,8 @@ class Header extends Component {
               active={activeItem === 'education'}
               onClick={this.handleItemClick}
               as={Link}
-              to='/education'
+              smooth
+              to='/#education-page-title-section'
             />
           </Menu.Menu>
         </Menu>

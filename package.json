@@ -1,6 +1,6 @@
 {
   "name": "online-cv",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Online CV for Luthfi Kurnia Putra",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,6 @@
     "clean": "rm -rf dist/",
     "build": "npx webpack",
     "copy-assets": "cp -R assets dist/assets",
-    "start-server": "node app.js",
-    "build-dev": "npm run clean && npm run build && npm run copy-assets && npm run start-server",
     "build-prod": "npm run clean && npm run build && npm run copy-assets"
   },
   "keywords": [
@@ -33,6 +31,7 @@
     "react-dom": "^16.13.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^4.3.1",
+    "react-router-hash-link": "^2.0.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^1.2.0",
     "style-loader": "^1.2.1",
