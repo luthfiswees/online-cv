@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Menu } from 'semantic-ui-react';
-//import { Link } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 
 class Header extends Component {
