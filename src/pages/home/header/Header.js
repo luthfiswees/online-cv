@@ -1,15 +1,41 @@
 import React, { Component } from 'react';
-import { Menu } from 'semantic-ui-react';
+import { Icon, Menu } from 'semantic-ui-react';
 import { HashLink as Link } from 'react-router-hash-link';
 
 class Header extends Component {
   constructor(props) {
     super(props);
     this.handleItemClick = this.handleItemClick.bind(this);
+    this.elementIsInViewport = this.elementIsInViewport.bind(this);
+    this.checkViewportState = this.checkViewportState.bind(this);
 
     this.state = {
       activeItem: 'home'
     }
+  }
+
+  elementIsInViewport(id) {
+    const rect = document.getElementById(id).getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  checkViewportState(id, newState) {
+    if (this.elementIsInViewport(id)) {
+      this.setState({ activeItem: newState })
+    }
+  }
+
+  componentDidMount() {
+    setInterval(() => {
+      this.checkViewportState("education-page-title-section", "education")
+      this.checkViewportState("experience-page-title-section", "experience")
+      this.checkViewportState("home-page-profile-section", "home")
+    }, 200);
   }
 
   handleItemClick(e, { name }) {
@@ -22,7 +48,18 @@ class Header extends Component {
     return (
       <div>
         <Menu inverted fixed="top" size="huge">
-          <Menu.Item header>luthfiswees's CV</Menu.Item>
+          <Menu.Item header>luthfiswees</Menu.Item>
+          <Menu.Item
+            href='https://github.com/luthfiswees/'
+          >
+            <Icon name='github'/>
+          </Menu.Item>
+          <Menu.Item
+            href='https://www.linkedin.com/in/luthfiswees/'
+          >
+            <Icon name='linkedin'/>
+          </Menu.Item>
+
           <Menu.Menu position="right">
             <Menu.Item
               name='home'

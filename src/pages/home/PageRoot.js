@@ -5,6 +5,7 @@ import ExperienceSection from './section/experience/ExperienceSection';
 import EducationSection from './section/education/EducationSection';
 
 import Header from "./header/Header";
+import Disclaimer from "./disclaimer/Disclaimer";
 
 class PageRoot extends Component {
   render() {
@@ -16,6 +17,7 @@ class PageRoot extends Component {
         <ExperienceSection/>
         <EducationSection/>
 
+        <Disclaimer/>
       </div>
     );
   }
