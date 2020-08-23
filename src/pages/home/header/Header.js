@@ -95,7 +95,7 @@ class Header extends Component {
                 smooth
                 to={ '#' + this.route.profileSection }
               >
-                Profile
+                <h5>Profile</h5>
               </Nav.Link>
               <Nav.Link
                 eventKey='experience' 
@@ -104,7 +104,7 @@ class Header extends Component {
                 smooth
                 to={ '#' + this.route.experienceSection }
               >
-                Experience
+                <h5>Experience</h5>
               </Nav.Link>
               <Nav.Link
                 eventKey='education' 
@@ -113,7 +113,7 @@ class Header extends Component {
                 smooth
                 to={ '#' + this.route.educationSection }
               >
-                Education
+                <h5>Education</h5>
               </Nav.Link>
             </Nav>
           </Navbar>

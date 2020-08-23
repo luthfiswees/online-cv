@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 
-import { Container, Header } from "semantic-ui-react";
+import Container from 'react-bootstrap/Container';
 
 class ExperiencePageTitleSection extends Component {
   render() {
     return (
       <div id="experience-page-title-section">
-        <Container textAlign="center">
+        <Container style={{ textAlign: 'center' }}>
           <br/><br/><br/>
-          <Header as="h1">Experience</Header>
+          <h1><b>Experience</b></h1>
           <br/><br/>
         </Container>
       </div>

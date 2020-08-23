@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, Image } from "semantic-ui-react";
+import Card from 'react-bootstrap/Card';
 
 class SkillCard extends Component {
   constructor(props){
@@ -9,16 +9,23 @@ class SkillCard extends Component {
   render() {
     return (
       <div>
-        <Card>
-          <Card.Content>
-            <Image 
-              floated="left"
-              size="mini"
-              src={ this.props.iconLink }
-            />
-            <Card.Header>{ this.props.name }</Card.Header>
-            <Card.Meta>{ this.props.description }</Card.Meta>
-          </Card.Content>
+        <Card style={{ width: '16rem' }}>
+          <Card.Img 
+            variant="left" 
+            style={{ 
+              padding: '1rem',  
+              width: '12rem', 
+              height: '12rem',
+              display: 'block',
+              marginLeft: 'auto',
+              marginRight: 'auto'
+            }} 
+            src={ this.props.iconLink } 
+          />
+          <Card.Body>
+            <Card.Title><b>{ this.props.name }</b></Card.Title>
+            <Card.Text style={{ height: '4rem' }}>{ this.props.description }</Card.Text>
+          </Card.Body>
         </Card>
       </div>
     );
