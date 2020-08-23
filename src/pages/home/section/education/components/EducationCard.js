@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-//import { Card } from "semantic-ui-react";
 import Card from 'react-bootstrap/Card';
 
 class EducationCard extends Component {
@@ -19,14 +18,6 @@ class EducationCard extends Component {
             </Card.Text>
           </Card.Body>
         </Card>
-
-        {/* <Card>
-          <Card.Content>
-            <Card.Header>{ this.props.name }</Card.Header>
-            <Card.Meta>{ this.props.degree }</Card.Meta>
-            <Card.Description>{ this.props.year }. Majoring in { this.props.major }</Card.Description>
-          </Card.Content>
-        </Card> */}
       </div>
     );
   }

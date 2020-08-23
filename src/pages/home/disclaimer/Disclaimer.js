@@ -31,9 +31,9 @@ class Disclaimer extends Component {
           (!this.state.isOnMobile) &&
             <Badge pill variant="dark" as={Container} style={{
               position: 'fixed', 
-              left: '80%',
+              left: '78%',
               bottom: '3%',
-              width: '18%',
+              width: '20%',
               padding: '1%',
               textAlign: 'center',
               fontSize: '100%'

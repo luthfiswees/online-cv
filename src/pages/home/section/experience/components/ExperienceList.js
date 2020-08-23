@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-//import { Container, Header } from "semantic-ui-react";
 import Container from 'react-bootstrap/Container';
 
 class ExperienceList extends Component {
