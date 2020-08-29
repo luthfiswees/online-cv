@@ -22,11 +22,11 @@ class Header extends Component {
         position: 'fixed'
       },
       iconContainer: {
-        padding: '10%'
+        padding: '20%'
       }
     }
     this.route = {
-      profileSection: 'home-page-profile-section',
+      profileSection: 'home-page-title-section',
       experienceSection: 'experience-page-title-section',
       educationSection: 'education-page-title-section'
     }
@@ -69,17 +69,17 @@ class Header extends Component {
           <Navbar fixed="top" bg="dark" variant="dark">
             <Navbar.Brand><h3>luthfiswees</h3></Navbar.Brand>
             <Nav className="mr-auto">
-              <div style={this.style.iconContainer}>
+              <div>
                 <a href='https://github.com/luthfiswees/'>
                   <Nav.Item>
-                    <FontAwesomeIcon icon={faGithub} color="white" size="2x"/>
+                    <FontAwesomeIcon style={this.style.iconContainer} icon={faGithub} color="white" size="3x"/>
                   </Nav.Item>
                 </a>
               </div>
-              <div style={this.style.iconContainer}>
+              <div>
                 <a href='https://www.linkedin.com/in/luthfiswees/'>
                   <Nav.Item>
-                    <FontAwesomeIcon icon={faLinkedin} color="white" size="2x"/>
+                    <FontAwesomeIcon style={this.style.iconContainer} icon={faLinkedin} color="white" size="3x"/>
                   </Nav.Item>
                 </a>
               </div>

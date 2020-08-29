@@ -10,12 +10,15 @@ class HomePageProfileSection extends Component {
     return (
       <div id="home-page-profile-section">
         <Container style={{ padding: '1rem' }}>
-          <Jumbotron as={Container} style={{
+          <Container style={{
             position: 'grid',
             width: '65rem', 
-            height: '43rem',
+            height: '45rem',
             borderRadius: '2rem',
-            fontSize: '1rem' 
+            fontSize: '1.2rem',
+            paddingTop: '4rem',
+            paddingLeft: '1rem',
+            paddingRight: '1rem' 
           }}>
             <Row>
               <Col xs={4}>
@@ -33,7 +36,7 @@ class HomePageProfileSection extends Component {
 
               <Col xs={8}>
                 <br/>
-                <h3><b>Luthfi Kurnia Putra</b></h3>
+                <h2 id="home-page-title-section"><b>Luthfi Kurnia Putra</b></h2>
                 <h3>Software Engineer in Test</h3>
                 <br/>
                 <h4><b>A little thing about me</b></h4>
@@ -53,8 +56,9 @@ class HomePageProfileSection extends Component {
                 <p><a href="https://github.com/luthfiswees/">https://github.com/luthfiswees/</a></p>
               </Col>
             </Row>
-          </Jumbotron>
+          </Container>
         </Container>
+        <br/><br/><br/>
       </div>
     );
   }
