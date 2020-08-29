@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Card, Container, Header } from "semantic-ui-react";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 import EducationCard from "../components/EducationCard";
 
@@ -9,12 +10,12 @@ class EducationPageEducationSection extends Component {
   render() {
    return (
      <div id="education-page-education-section">
-       <Container text>
+       <Container style={{ width: '50rem', fontSize: '1.2rem' }}>
           <br/><br/>
-          <Header as="h2">Education</Header>
+          <h2>Education</h2>
           <br/>
 
-          <Card.Group>
+          <Row>
           {
             educationContent.contents.map(function(content) {
               return <EducationCard 
@@ -25,7 +26,7 @@ class EducationPageEducationSection extends Component {
               />
             })
           }
-          </Card.Group>
+          </Row>
           <br/><br/>
         </Container>
       </div>

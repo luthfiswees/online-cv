@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import { Icon, Menu } from 'semantic-ui-react';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { HashLink as Link } from 'react-router-hash-link';
 
 class Header extends Component {
@@ -11,6 +15,20 @@ class Header extends Component {
 
     this.state = {
       activeItem: 'home'
+    }
+    
+    this.style = {
+      navbarContainer: {
+        position: 'fixed'
+      },
+      iconContainer: {
+        padding: '20%'
+      }
+    }
+    this.route = {
+      profileSection: 'home-page-title-section',
+      experienceSection: 'experience-page-title-section',
+      educationSection: 'education-page-title-section'
     }
   }
 
@@ -32,9 +50,9 @@ class Header extends Component {
 
   componentDidMount() {
     setInterval(() => {
-      this.checkViewportState("education-page-title-section", "education")
-      this.checkViewportState("experience-page-title-section", "experience")
-      this.checkViewportState("home-page-profile-section", "home")
+      this.checkViewportState(this.route.educationSection, "education")
+      this.checkViewportState(this.route.experienceSection, "experience")
+      this.checkViewportState(this.route.profileSection, "home")
     }, 200);
   }
 
@@ -47,48 +65,59 @@ class Header extends Component {
 
     return (
       <div>
-        <Menu inverted fixed="top" size="huge">
-          <Menu.Item header>luthfiswees</Menu.Item>
-          <Menu.Item
-            href='https://github.com/luthfiswees/'
-          >
-            <Icon name='github'/>
-          </Menu.Item>
-          <Menu.Item
-            href='https://www.linkedin.com/in/luthfiswees/'
-          >
-            <Icon name='linkedin'/>
-          </Menu.Item>
-
-          <Menu.Menu position="right">
-            <Menu.Item
-              name='home'
-              active={activeItem === 'home'}
-              onClick={this.handleItemClick}
-              as={Link}
-              smooth
-              to='/#home-page-profile-section'
-            />
-
-            <Menu.Item
-              name='experience'
-              active={activeItem === 'experience'}
-              onClick={this.handleItemClick}
-              as={Link}
-              smooth
-              to='/#experience-page-title-section'
-            />
-
-            <Menu.Item
-              name='education'
-              active={activeItem === 'education'}
-              onClick={this.handleItemClick}
-              as={Link}
-              smooth
-              to='/#education-page-title-section'
-            />
-          </Menu.Menu>
-        </Menu>
+        <Container fluid>
+          <Navbar fixed="top" bg="dark" variant="dark">
+            <Navbar.Brand><h3>luthfiswees</h3></Navbar.Brand>
+            <Nav className="mr-auto">
+              <div>
+                <a href='https://github.com/luthfiswees/' target="_blank">
+                  <Nav.Item>
+                    <FontAwesomeIcon style={this.style.iconContainer} icon={faGithub} color="white" size="3x"/>
+                  </Nav.Item>
+                </a>
+              </div>
+              <div>
+                <a href='https://www.linkedin.com/in/luthfiswees/' target="_blank">
+                  <Nav.Item>
+                    <FontAwesomeIcon style={this.style.iconContainer} icon={faLinkedin} color="white" size="3x"/>
+                  </Nav.Item>
+                </a>
+              </div>
+            </Nav>
+            <Nav
+              defaultActiveKey={ 'home' }
+              activeKey={ activeItem }
+            >
+              <Nav.Link
+                eventKey='home' 
+                size="lg" 
+                as={Link}
+                smooth
+                to={ '#' + this.route.profileSection }
+              >
+                <h5>Profile</h5>
+              </Nav.Link>
+              <Nav.Link
+                eventKey='experience' 
+                size="lg" 
+                as={Link}
+                smooth
+                to={ '#' + this.route.experienceSection }
+              >
+                <h5>Experience</h5>
+              </Nav.Link>
+              <Nav.Link
+                eventKey='education' 
+                size="lg" 
+                as={Link}
+                smooth
+                to={ '#' + this.route.educationSection }
+              >
+                <h5>Education</h5>
+              </Nav.Link>
+            </Nav>
+          </Navbar>
+        </Container>
       </div>
     )
   }

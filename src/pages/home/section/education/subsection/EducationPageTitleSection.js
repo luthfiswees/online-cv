@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 
-import { Container, Header } from "semantic-ui-react";
+import Container from 'react-bootstrap/Container';
 
 class EducationPageTitleSection extends Component {
   render() {
     return (
       <div id="education-page-title-section">
-        <Container textAlign="center">
+        <Container style={{ textAlign: 'center' }}>
           <br/><br/><br/>
-          <Header as="h1">Skill and Education</Header>
+          <h1><b>Skill and Education</b></h1>
           <br/><br/>
         </Container>
       </div>

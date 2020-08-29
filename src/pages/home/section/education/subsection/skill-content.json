@@ -61,6 +61,18 @@
             "iconLink": "assets/icons/icons8-docker-96.png"
         },
         {
+            "name": "React",
+            "type": "other",
+            "description": "Javascript UI Library",
+            "iconLink": "assets/icons/icons8-react-80.png"
+        },
+        {
+            "name": "Bootstrap",
+            "type": "other",
+            "description": "CSS Library",
+            "iconLink": "assets/icons/icons8-bootstrap-96.png"
+        },
+        {
             "name": "MySQL",
             "type": "other",
             "description": "Database Technology",

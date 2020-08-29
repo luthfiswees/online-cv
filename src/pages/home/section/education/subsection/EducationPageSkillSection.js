@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Card, Container, Header } from "semantic-ui-react";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 import SkillCard from "../components/SkillCard";
 
@@ -25,8 +26,8 @@ class EducationPageSkillSection extends Component {
   render() {
     return (
       <div id="education-page-skill-section">
-        <Container text>
-          <Header as="h2">Skill</Header>
+        <Container style={{ width: '50rem', fontSize: '1.2rem' }}>
+          <h2>Skill</h2>
 
           <p><i>
             Disclaimer: Icons presented here are properties of 
@@ -34,26 +35,24 @@ class EducationPageSkillSection extends Component {
           </i></p>
           <br/>
 
-          <Container>
-            <Header as="h3">Programming Language</Header>
-            <br/>
-            <Card.Group>
-              { this.getSkillCard("programming") }
-            </Card.Group>
-            <br/>
+          <h3>Programming Language</h3>
+          <br/>
+          <Row>
+            { this.getSkillCard("programming") }
+          </Row>
+          <br/>
 
-            <Header as="h3">Technologies</Header>
-            <Card.Group>
-              { this.getSkillCard("technologies") }
-            </Card.Group>
-            <br/>
+          <h3>Technologies</h3>
+          <Row>
+            { this.getSkillCard("technologies") }
+          </Row>
+          <br/>
 
-            <Header as="h3">Others</Header>
-            <Card.Group>
-              { this.getSkillCard("other") }
-            </Card.Group>
+          <h3>Others</h3>
+          <Row>
+            { this.getSkillCard("other") }
+          </Row>
             <br/>
-          </Container>
         </Container>
       </div>
     );
