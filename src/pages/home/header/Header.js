@@ -70,14 +70,14 @@ class Header extends Component {
             <Navbar.Brand><h3>luthfiswees</h3></Navbar.Brand>
             <Nav className="mr-auto">
               <div>
-                <a href='https://github.com/luthfiswees/'>
+                <a href='https://github.com/luthfiswees/' target="_blank">
                   <Nav.Item>
                     <FontAwesomeIcon style={this.style.iconContainer} icon={faGithub} color="white" size="3x"/>
                   </Nav.Item>
                 </a>
               </div>
               <div>
-                <a href='https://www.linkedin.com/in/luthfiswees/'>
+                <a href='https://www.linkedin.com/in/luthfiswees/' target="_blank">
                   <Nav.Item>
                     <FontAwesomeIcon style={this.style.iconContainer} icon={faLinkedin} color="white" size="3x"/>
                   </Nav.Item>
